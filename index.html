@@ -1,83 +1,117 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OYP Football | Ömer Yusuf Paksu</title>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
 
-<title>KO Football | Kağan Ömer</title>
-
-<link rel="stylesheet" href="style.css">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<nav>
+<header>
 
-<h1>KO Football</h1>
+<nav class="navbar">
+
+<div class="logo">
+<span>OYP</span>
+</div>
 
 <ul>
 
 <li><a href="#home">Ana Sayfa</a></li>
-
-<li><a href="#about">Ben Kimim</a></li>
-
+<li><a href="#about">Profil</a></li>
 <li><a href="#videos">Videolar</a></li>
-
-<li><a href="#stats">İstatistik</a></li>
-
+<li><a href="#stats">İstatistikler</a></li>
 <li><a href="#top10">Top10</a></li>
-
 <li><a href="#contact">İletişim</a></li>
 
 </ul>
 
 </nav>
 
-<section id="home" class="hero">
+</header>
 
-<h2>KAĞAN ÖMER</h2>
 
-<h3>Football Portfolio</h3>
+<section class="hero" id="home">
 
-<p>16 Yaş • Sol Ayak • Öğrenci • Kanat</p>
+<div class="overlay"></div>
 
-<a href="#videos" class="btn">
+<div class="hero-content">
 
-Videoları İzle
+<h3>FOOTBALL PORTFOLIO</h3>
 
-</a>
+<h1>ÖMER YUSUF PAKSU</h1>
+
+<p>
+
+16 Yaş • 174 CM • 56 KG • Sol Ayak • Orta Saha • #8
+
+</p>
+
+<div class="buttons">
+
+<a href="#videos" class="btn red">Videoları İzle</a>
+
+<a href="#about" class="btn">Profili İncele</a>
+
+</div>
+
+</div>
 
 </section>
+
 
 <section id="about">
 
 <h2>Ben Kimim?</h2>
 
+<div class="about-box">
+
+<div class="player-card">
+
+<h1>OYP</h1>
+
+<h3>Ömer Yusuf Paksu</h3>
+
+<p>⚽ Orta Saha</p>
+
+<p>🦶 Sol Ayak</p>
+
+<p>📍 Kahramanmaraş</p>
+
+<p>🎂 16 Yaş</p>
+
+<p>📏 174 cm</p>
+
+<p>⚖️ 56 kg</p>
+
+<p>👕 Forma No: 8</p>
+
+</div>
+
+<div class="about-text">
+
 <p>
 
 Merhaba!
 
-Ben Kağan Ömer.
+Ben Ömer Yusuf Paksu.
 
-16 yaşındayım.
+Futbol benim için sadece bir spor değil, aynı zamanda kendimi geliştirdiğim ve hedeflerime ulaşmak için çalıştığım bir yaşam tarzı.
 
-Futbol oynamayı çok seviyorum.
+Bu web sitesinde attığım golleri, maç videolarımı, istatistiklerimi ve gelişimimi paylaşacağım.
 
-Sol ayağımı kullanıyorum.
-
-Kendimi her gün geliştirerek daha iyi bir futbolcu olmayı hedefliyorum.
-
-Bu sitede attığım golleri, maç kesitlerini ve istatistiklerimi paylaşıyorum.
+Hedefim kendimi sürekli geliştirerek daha üst seviyelerde futbol oynamak.
 
 </p>
+
+</div>
+
+</div>
 
 </section>
 
@@ -85,38 +119,26 @@ Bu sitede attığım golleri, maç kesitlerini ve istatistiklerimi paylaşıyoru
 
 <h2>İstatistikler</h2>
 
-<div class="cards">
+<div class="stats-grid">
 
-<div>
-
+<div class="card">
 <h1>58</h1>
-
-Gol
-
+<p>Gol</p>
 </div>
 
-<div>
-
-<h1>19</h1>
-
-Asist
-
+<div class="card">
+<h1>22</h1>
+<p>Asist</p>
 </div>
 
-<div>
-
-<h1>41</h1>
-
-Maç
-
+<div class="card">
+<h1>46</h1>
+<p>Maç</p>
 </div>
 
-<div>
-
-<h1>9.2</h1>
-
-Puan
-
+<div class="card">
+<h1>9.4</h1>
+<p>Ortalama</p>
 </div>
 
 </div>
@@ -125,13 +147,29 @@ Puan
 
 <section id="videos">
 
-<h2>Videolar</h2>
+<h2>Son Videolar</h2>
 
-<p>
+<div class="video-grid">
 
-Buraya yüklediğin bütün videolar kart şeklinde görünecek.
+<div class="video-card">
+<h3>⚽ Füze Gol</h3>
+<p>Kahramanmaraş</p>
+<button>İzle</button>
+</div>
 
-</p>
+<div class="video-card">
+<h3>⚽ Sol Ayak Golü</h3>
+<p>Kahramanmaraş</p>
+<button>İzle</button>
+</div>
+
+<div class="video-card">
+<h3>⚽ Uzak Mesafe</h3>
+<p>Kahramanmaraş</p>
+<button>İzle</button>
+</div>
+
+</div>
 
 </section>
 
@@ -139,11 +177,7 @@ Buraya yüklediğin bütün videolar kart şeklinde görünecek.
 
 <h2>En İyi 10 Gol</h2>
 
-<p>
-
-Burada kullanıcı puanlarına göre en iyi goller sıralanacak.
-
-</p>
+<p>Bu bölüm bir sonraki aşamada dinamik olarak oluşturulacak.</p>
 
 </section>
 
@@ -151,22 +185,15 @@ Burada kullanıcı puanlarına göre en iyi goller sıralanacak.
 
 <h2>İletişim</h2>
 
-<p>
+<p>Instagram</p>
 
-Instagram
+<p>TikTok</p>
 
-YouTube
-
-TikTok
-
-Mail
-
-</p>
+<p>YouTube</p>
 
 </section>
 
 <script src="script.js"></script>
 
 </body>
-
 </html>
