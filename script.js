@@ -144,3 +144,72 @@ mostViewed.textContent="Video "+(index+1);
 });
 
 },1000);
+/*=========================
+LOADER
+==========================*/
+
+window.addEventListener("load",()=>{
+
+setTimeout(()=>{
+
+document.getElementById("loader").style.opacity="0";
+
+setTimeout(()=>{
+
+document.getElementById("loader").style.display="none";
+
+},1000);
+
+},2500);
+
+});
+
+/*=========================
+CURSOR LIGHT
+==========================*/
+
+const light=document.getElementById("cursor-light");
+
+document.addEventListener("mousemove",(e)=>{
+
+light.style.left=e.clientX+"px";
+
+light.style.top=e.clientY+"px";
+
+});
+
+/*=========================
+COUNTER
+==========================*/
+
+const counters=document.querySelectorAll(".stat-card h1");
+
+counters.forEach(counter=>{
+
+const target=parseFloat(counter.innerText);
+
+let count=0;
+
+const speed=target/100;
+
+const update=()=>{
+
+count+=speed;
+
+if(count<target){
+
+counter.innerText=Math.round(count);
+
+requestAnimationFrame(update);
+
+}else{
+
+counter.innerText=target;
+
+}
+
+}
+
+update();
+
+});
