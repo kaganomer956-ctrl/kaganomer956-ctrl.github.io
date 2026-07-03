@@ -102,3 +102,45 @@ watch.innerText=parseInt(watch.innerText)+1;
 });
 
 });
+// Basit örnek güncelleme
+
+const mostViewed=document.getElementById("mostViewed");
+const mostLiked=document.getElementById("mostLiked");
+
+setInterval(()=>{
+
+const likes=document.querySelectorAll(".like-count");
+const views=document.querySelectorAll(".watch-count");
+
+let maxLike=0;
+let maxView=0;
+
+likes.forEach((item,index)=>{
+
+const value=parseInt(item.innerText);
+
+if(value>maxLike){
+
+maxLike=value;
+
+mostLiked.textContent="Video "+(index+1);
+
+}
+
+});
+
+views.forEach((item,index)=>{
+
+const value=parseInt(item.innerText);
+
+if(value>maxView){
+
+maxView=value;
+
+mostViewed.textContent="Video "+(index+1);
+
+}
+
+});
+
+},1000);
